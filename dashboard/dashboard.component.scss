@@ -1,0 +1,174 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  width: 100%;
+}
+
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; /* Allow wrapping for multiple cards */
+}
+
+/* Existing two and single card rows */
+.card-row.two-cards {
+  flex-wrap: nowrap;
+}
+
+.card-row.single-card {
+  flex-wrap: nowrap;
+}
+
+/* New style for four cards per row */
+.card-row.four-cards .card {
+  flex: 0 0 calc(25% - 15px); /* 4 cards per row with gap considered */
+  min-height: 350px; /* Same height for all cards */
+}
+
+/* Keep your card styles */
+.card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+  position: relative;
+  display: flex; /* Make content stretch */
+  flex-direction: column; /* Stack content vertically */
+  min-height: 300px; /* Base min-height */
+}
+
+.card:hover {
+  transform: translate(-5px);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+  background-color: #e0f7fa;
+}
+
+.card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15px;
+}
+
+.income-details, .total-details {
+  flex-grow: 1; /* Make these sections grow to fill the card */
+  display: flex;
+  flex-direction: column;
+}
+
+.month {
+  margin-bottom: 15px;
+}
+
+.month h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.month ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+  flex-grow: 1; /* Make the list grow to fill space */
+}
+
+.month ul li {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.month p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: auto; /* Push the button to the bottom */
+}
+
+.button:hover {
+  background-color: #a0457f;
+}
+
+.transaction-status mat-icon {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 20px;
+  color: #a0457f;
+}
+
+.transaction-details {
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.transaction-details.completed {
+  text-decoration: line-through;
+}
+
+.mat-icon {
+  font-size: 24px;
+  color: #000000;
+}
+
+/* Width settings */
+.card-row.two-cards .card {
+  flex: 0 0 calc(50% - 10px);
+}
+
+.card-row.single-card .card {
+  flex: 0 0 100%;
+}
+.card-header + hr {
+  border: none;
+  border-bottom: 2px solid #a0457f; /* purple line */
+  margin: 10px 0 20px 0;
+  width: 100%;
+}
+
+/* Optional: style the other horizontal line inside total-details if you want it differently */
+.total-line {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
+}
+.background-image{
+   background: url('https://images.unsplash.com/photo-1662948496624-669ce77ed50d?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+   background: url('https://images.unsplash.com/photo-1654198340681-a2e0fc449f1b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+  min-height: 100vh;
+  padding: 40px 0;
+}
