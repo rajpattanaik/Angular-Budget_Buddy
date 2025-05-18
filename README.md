@@ -16,9 +16,10 @@ SIDE-BAR:
 INCOME PANEL:
 ![Screenshot 2025-05-18 215045](https://github.com/user-attachments/assets/c0a98e22-5b81-4ddf-9f5a-358e97ae808f)
 
-USER PROFILE:![Screenshot 2025-05-18 214737](https://github.com/user-attachments/assets/65b97739-5613-44ed-a6a7-5bd75051da4c)![Uploading Screenshot 2025-05-18 214718.png…]()
+USER PROFILE:!
+[Screenshot 2025-05-18 214737](https://github.com/user-attachments/assets/65b97739-5613-44ed-a6a7-5bd75051da4c)
 
 
 PREV TRANSACTION:
-![image](https://github.com/user-attachments/assets/15f420b3-df76-446e-97ca-3fd8f847db7d)
+
 
